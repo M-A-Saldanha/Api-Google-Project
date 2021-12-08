@@ -107,6 +107,6 @@ export const MapContainer = (props) => {
 
 
 export default GoogleApiWrapper({
-    apiKey: REACT_APP_GOOGLE_API_KEY,
-    language: 'pt-BR'
+    apiKey: process.env.REACT_APP_GOOGLE_API_KEY,
+    language: 'pt-BR',
 })(MapContainer);
